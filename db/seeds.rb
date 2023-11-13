@@ -7,3 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# create_table "events", force: :cascade do |t|
+#   t.string "name"
+#   t.string "location"
+#   t.datetime "start_time"
+#   t.decimal "price"
+#   t.integer "max_players"
+#   t.bigint "author_id", null: false
+
+10.times do
+  e = Event.new(name: 'foot by adam', location: '13 by puma', start_time: Time.now + rand(1..200), price: rand(10..20), max_players: rand(8..16), author_id: 1)
+  e.save!
+  sleep(0.3)
+end

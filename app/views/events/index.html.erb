@@ -1,0 +1,10 @@
+<h1>Les prochains événements futsal</h1>
+
+<% @events.each do |event| %>
+  <h3><%= event.name %></h3>
+  <%= link_to 'voir', event_path(event) %>
+  <p><%= event.location %></p>
+  <p><%= event.start_time %></p>
+  <p><%= event.price %>€ par joueur</p>
+  <p>0 / <%= event.max_players %> joueurs</p>
+<% end %>

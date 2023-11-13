@@ -1,0 +1,18 @@
+/*
+general-background-green: #556B2F;
+text-color-white: white;
+
+futsal-card-green: #6B8E23;
+futsal-card-hover-green: rgba(50, 205, 50, 0.33);
+futsal-card-shadow: 8px 8px 4px 0 25%;
+
+cta-btn-yellow: #FFA500;
+cta-border-btn-yellow: #E69500; 2px solid
+cta-btn-shadow: 8 8 8 0 25%;
+
+*/
+
+* {
+  background-color: #556B2F;
+  color: white;
+}

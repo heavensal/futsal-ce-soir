@@ -1,0 +1,8 @@
+<h1><%= @event.name %></h1>
+<p><%= @event.location %></p>
+<p><%= @event.start_time %></p>
+<p><%= @event.price %>€ par joueur</p>
+<p>0 / <%= @event.max_players %> joueurs</p>
+<p>créé par <%= @event.author.username %></p>
+
+<%= link_to 'Revenir à l\'accueil', events_path %>
