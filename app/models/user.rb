@@ -6,8 +6,13 @@ class User < ApplicationRecord
 
   before_save :set_username
 
-  has_many :event_players
+  has_many :events, dependent: :destroy
+  has_many :event_players, dependent: :destroy
   has_many :events, through: :event_players
+  has_many :teams, through: :event_players
+
+  has_many :friendships, dependent: :destroy
+  has_many :friends, through: :friendships, class_name: 'User'
 
   private
 
