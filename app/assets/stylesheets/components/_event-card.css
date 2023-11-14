@@ -1,0 +1,32 @@
+.event-card {
+  text-align: center;
+  background-color: #6B8E23;
+  box-shadow: 8px 8px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.event-card:hover {
+  background-color: rgba(50, 205, 50, 0.33);
+}
+
+#events-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.event-card p {
+  font-size: 12px;
+  color: white;
+}
+
+.event-card h2 {
+  font-size: 16px;
+  color: white;
+}
+
+.event-card a {
+  display: block;
+  height: max-content;
+}

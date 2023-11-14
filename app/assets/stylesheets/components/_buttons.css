@@ -1,0 +1,15 @@
+#cta-btn {
+  color: white;
+  background-color: #FFA500;
+  border: 2px solid #E69500;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8vh;
+
+  padding: 0.5em;
+  width: 75%;
+  text-align: center;
+}

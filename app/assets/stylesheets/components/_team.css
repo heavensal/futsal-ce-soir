@@ -5,27 +5,8 @@
   text-align:center;
 }
 
-.event-info {
-  background-color: #4A5D43;
-  border: 1px solid #2F3F27;
-  text-align: center;
-  margin: 1em;
-  border-radius: 4px;
-}
-
 .team-title {
   margin-bottom: 0.5em;
-}
-
-.player-card-1 {
-  background-color: #b22222;
-  border-radius: 4px;
-  padding: 0.25em;
-  margin-bottom: 4px;
-}
-
-.player-card-2 {
-  background-color: #2239B2;
 }
 
 #team-1 {

@@ -14,8 +14,6 @@
  *= require_self
  */
 
- @import 'navbar/index';
-
 a {
   text-decoration: none;
 }

@@ -1,0 +1,29 @@
+<div class="event-info">
+  <%= @event.location %>
+</div>
+
+<div class='event-info'>
+  <%= @event.start_time.strftime("%A %-d %B %Y %R") %>
+</div>
+
+<div class='event-info'>
+  <%= number_to_currency(@event.price, unit: "€", separator: ",", delimiter: " ", format: "%n %u") %> / joueur
+</div>
+
+<div class="container-flex-center">
+  <div class='event-info'>
+    <%= @event.players.length %> joueurs
+  </div>
+
+  <div class="event-info-slash">
+    /
+  </div>
+
+  <div class="event-info">
+    <%= @event.max_players %> joueurs
+  </div>
+</div>
+
+<div class='event-info'>
+  créé par <%= @event.author.username %>
+</div>

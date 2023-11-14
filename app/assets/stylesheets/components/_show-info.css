@@ -1,0 +1,23 @@
+.event-info {
+  background-color: #4A5D43;
+  border: 1px solid #2F3F27;
+  text-align: center;
+  margin: 1em;
+  border-radius: 4px;
+}
+
+.container-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.container-flex-center div {
+  padding: 0.25em;
+}
+
+.event-info-slash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}

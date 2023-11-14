@@ -1,12 +1,9 @@
 <h1>Les prochains événements futsal</h1>
 
-<%= link_to 'Créer un nouvel événément futsal', new_event_path %>
+<%= link_to 'Créer un nouvel événément futsal', new_event_path, id: 'cta-btn' %>
 
-<% @events.each do |event| %>
-  <h3><%= event.name %></h3>
-  <%= link_to 'voir', event_path(event) %>
-  <p><%= event.location %></p>
-  <p><%= event.start_time %></p>
-  <p><%= event.price %>€ par joueur</p>
-  <p>0 / <%= event.max_players %> joueurs</p>
-<% end %>
+<section id="events-grid-container">
+  <% @events.each do |event| %>
+    <%= render 'events/index/event-card', event: event %>
+  <% end %>
+</section>

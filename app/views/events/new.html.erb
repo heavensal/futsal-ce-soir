@@ -2,27 +2,27 @@
 
 <%= form_with model: @event do |f| %>
   <div>
-    <%= f.label 'Nom de l\'événément' %>
+    <%= f.label :name, 'Nom de l\'événément' %>
     <%= f.text_field :name, value: "futsal by #{current_user.username}" %>
   </div>
 
   <div>
-    <%= f.label 'Lieu du futsal' %>
+    <%= f.label :location,'Lieu du futsal' %>
     <%= f.text_field :location %>
   </div>
 
   <div>
-    <%= f.label 'Heure et jour' %>
+    <%= f.label :start_time, 'Heure et jour' %>
     <%= f.datetime_field :start_time %>
   </div>
 
   <div>
-    <%= f.label 'Nombre maximum de joueurs' %>
+    <%= f.label :max_players, 'Nombre maximum de joueurs' %>
     <%= f.number_field :max_players %>
   </div>
 
   <div>
-    <%= f.label 'Prix par joueur' %>
+    <%= f.label :price, 'Prix par joueur' %>
     <%= f.number_field :price %>
   </div>
 
