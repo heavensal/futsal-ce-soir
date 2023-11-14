@@ -2,14 +2,20 @@
   color: white;
   background-color: #FFA500;
   border: 2px solid #E69500;
-  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
 
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 8vh;
+  bottom: 5vh;
 
   padding: 0.5em;
   width: 75%;
   text-align: center;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+#cta-btn:hover {
+  background-color: #ffbf49;
 }

@@ -1,20 +1,25 @@
   <div class="event-card">
     <%= link_to event_path(event) do %>
-    <h2>
-      <%= event.name %>
-    </h2>
+    <div class="event-content">
+      <h2>
+        <%= event.name %>
+      </h2>
+      <div>
+        <p>
+          <%= event.location %>
+        </p>
 
-    <p>
-      <%= event.location %>
-    </p>
+        <p>
+          <%= event.start_time.strftime("%A %-d %b") %> <br>
+          <%= event.start_time.strftime("%Hh%M") %>
+        </p>
+      </div>
 
-    <p>
-      <%= event.start_time.strftime("%A %-d %B %Y %R") %>
-    </p>
+      <p>
+        <%= event.players.length %>/<%= event.max_players %> joueurs
+      </p>
 
-    <p>
-      <%= event.players.length %>/<%= event.max_players %> joueurs
-    </p>
+    </div>
 
 <% end %>
   </div>

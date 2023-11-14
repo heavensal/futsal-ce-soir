@@ -1,18 +1,28 @@
 .event-card {
   text-align: center;
   background-color: #6B8E23;
-  box-shadow: 8px 8px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  padding: 0.5em;
 }
 
 .event-card:hover {
   background-color: rgba(50, 205, 50, 0.33);
+  transform: scale(1.05);
 }
 
 #events-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
-  margin: 0 auto;
+  margin: 0 1em;
   align-items: stretch;
 }
 

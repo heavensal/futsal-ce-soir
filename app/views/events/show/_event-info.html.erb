@@ -3,7 +3,8 @@
 </div>
 
 <div class='event-info'>
-  <%= @event.start_time.strftime("%A %-d %B %Y %R") %>
+  <%= @event.start_time.strftime("%A %-d %B %Y") %> <br>
+  <%= @event.start_time.strftime("%Hh%M") %>
 </div>
 
 <div class='event-info'>
@@ -12,7 +13,7 @@
 
 <div class="container-flex-center">
   <div class='event-info'>
-    <%= @event.players.length %> joueurs
+    <%= @event.players.length %>
   </div>
 
   <div class="event-info-slash">
