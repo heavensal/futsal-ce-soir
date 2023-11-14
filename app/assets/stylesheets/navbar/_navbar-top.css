@@ -1,0 +1,17 @@
+nav {
+  position: sticky;
+  top: 0;
+}
+
+#navbar-top {
+  display: flex;
+  height: 8vh;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#navbar-top div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

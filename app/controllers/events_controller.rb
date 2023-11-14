@@ -15,6 +15,7 @@ class EventsController < ApplicationController
     @event = Event.new(params_event)
     @event.author = current_user
     if @event.save
+      @event.set_teams(@event.author)
       redirect_to event_path(@event)
     else
       redirect_to new_event_path
@@ -29,7 +30,13 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     @event.destroy
     redirect_to root_path
+  end
 
+  def set_teams(current_user)
+    team_a = self.teams.create!(name: 'Equipe 1')
+    self.teams.create!(name: 'Equipe 2')
+    self.teams.create!(name: 'Sur le banc')
+    self.event_players.create!(player: current_user, team: team_a)
   end
 
   private
@@ -37,4 +44,5 @@ class EventsController < ApplicationController
   def params_event
     params.require(:event).permit(:name, :location, :start_time, :price, :max_players)
   end
+
 end

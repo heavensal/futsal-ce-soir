@@ -1,5 +1,7 @@
 <h1>Les prochains événements futsal</h1>
 
+<%= link_to 'Créer un nouvel événément futsal', new_event_path %>
+
 <% @events.each do |event| %>
   <h3><%= event.name %></h3>
   <%= link_to 'voir', event_path(event) %>

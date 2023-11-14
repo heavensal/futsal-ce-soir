@@ -1,0 +1,55 @@
+#teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align:center;
+}
+
+.event-info {
+  background-color: #4A5D43;
+  border: 1px solid #2F3F27;
+  text-align: center;
+  margin: 1em;
+  border-radius: 4px;
+}
+
+.team-title {
+  margin-bottom: 0.5em;
+}
+
+.player-card-1 {
+  background-color: #b22222;
+  border-radius: 4px;
+  padding: 0.25em;
+  margin-bottom: 4px;
+}
+
+.player-card-2 {
+  background-color: #2239B2;
+}
+
+#team-1 {
+  background-color: #8b0000;
+  border: 2px solid #b22222;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 40%;
+}
+
+
+#team-2 {
+  background-color: #000E8B;
+  border: 2px solid #2239B2;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 40%;
+}
+
+#bench {
+  margin-top: 1em;
+  background-color: #7A7A7A;
+  border: 2px solid #D9D9D9;
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 80%;
+}

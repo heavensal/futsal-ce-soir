@@ -1,1 +1,30 @@
 <h1>Créer mon événement futsal</h1>
+
+<%= form_with model: @event do |f| %>
+  <div>
+    <%= f.label 'Nom de l\'événément' %>
+    <%= f.text_field :name, value: "futsal by #{current_user.username}" %>
+  </div>
+
+  <div>
+    <%= f.label 'Lieu du futsal' %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div>
+    <%= f.label 'Heure et jour' %>
+    <%= f.datetime_field :start_time %>
+  </div>
+
+  <div>
+    <%= f.label 'Nombre maximum de joueurs' %>
+    <%= f.number_field :max_players %>
+  </div>
+
+  <div>
+    <%= f.label 'Prix par joueur' %>
+    <%= f.number_field :price %>
+  </div>
+
+  <%= f.submit 'Créer mon événément futsal' %>
+<% end %>

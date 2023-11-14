@@ -16,8 +16,5 @@
 #   t.integer "max_players"
 #   t.bigint "author_id", null: false
 
-10.times do
-  e = Event.new(name: 'foot by adam', location: '13 by puma', start_time: Time.now + rand(1..200), price: rand(10..20), max_players: rand(8..16), author_id: 1)
-  e.save!
-  sleep(0.3)
-end
+Event.destroy_all
+puts 'mission complete'

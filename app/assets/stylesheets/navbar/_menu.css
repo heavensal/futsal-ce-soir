@@ -1,0 +1,27 @@
+#menu-section {
+  display: none;
+  position: absolute;
+  right:0;
+  top: 8vh;
+  width: 60vw;
+  height: 92vh;
+  box-shadow: -40vw 0 0 0 rgba(0, 0, 0, 0.50);
+}
+
+#menu-list {
+  list-style: none;
+  padding:0;
+}
+
+#menu-list .link {
+  font-family: arial;
+  padding: 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+#menu-agent-swap {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

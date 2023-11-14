@@ -1,0 +1,45 @@
+<section id="menu-section">
+  <ul id="menu-list">
+    <li>
+      <%= link_to events_path do %>
+        <div class='link'>Accueil</div>
+      <% end %>
+    </li>
+
+    <li>
+      <%= link_to new_event_path do %>
+        <div class='link'>Organiser un futsal</div>
+      <% end %>
+    </li>
+
+    <li>
+      <%= link_to events_path do %>
+        <div class='link'>Invitation</div>
+      <% end %>
+    </li>
+
+    <li>
+      <%= link_to events_path do %>
+        <div class='link'>Mes Amis</div>
+      <% end %>
+    </li>
+
+    <li id="menu-agent-swap">
+      <div>
+        <button>Joueur privé</button>
+        <button>Agent libre</button>
+      </div>
+    </li>
+
+    <li>
+      <%= link_to edit_user_registration_path do %>
+        <div class='link'>Paramètres du compte</div>
+      <% end %>
+    </li>
+
+    <li>
+      <%= button_to 'Déconnexion', destroy_user_session_path, method: :delete %>
+    </li>
+
+  </ul>
+</section>
