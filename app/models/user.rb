@@ -4,8 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  before_save :set_username
-
   has_many :events, dependent: :destroy
   has_many :event_players, dependent: :destroy
   has_many :events, through: :event_players
@@ -13,6 +11,9 @@ class User < ApplicationRecord
 
   has_many :friendships, dependent: :destroy
   has_many :friends, through: :friendships, class_name: 'User'
+
+  before_save :set_username
+
 
   private
 

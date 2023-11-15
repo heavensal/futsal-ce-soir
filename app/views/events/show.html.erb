@@ -12,4 +12,6 @@
   <%= render 'events/show/bench', event: @event %>
 </section>
 
-<%= link_to 'Revenir à l\'accueil', events_path %>
+<%= link_to event_path(@event), data: {turbo_method: :delete}, turbo_confirm: "tu es sûr?" do %>
+  <div>Annuler le futsal</div>
+<% end %>

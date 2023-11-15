@@ -19,3 +19,12 @@
 #cta-btn:hover {
   background-color: #ffbf49;
 }
+
+.menu-btn {
+  transition: transform 0.3s ease;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

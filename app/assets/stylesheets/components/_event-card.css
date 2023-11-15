@@ -21,7 +21,7 @@
 #events-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8px;
+  grid-gap: 1em;
   margin: 0 1em;
   align-items: stretch;
 }
