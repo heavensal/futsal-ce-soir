@@ -4,12 +4,27 @@
 
 <%= render 'events/show/event-info', event: @event %>
 
+
 <section id="teams-container">
-  <%= render 'events/show/team-1', event: @event %>
+  <% @event.teams.each do |team| %>
+    <div id="team-1">
 
-  <%= render 'events/show/team-2', event: @event %>
+      <h2 class="team-title">
+        <%= team.name %>
+      </h2>
 
-  <%= render 'events/show/bench', event: @event %>
+      <% team.players.each do |player| %>
+        <div class="player-card-1">
+          <%= player.first_name %>
+        </div>
+      <% end %>
+
+      <%= form_with model: [ @event, @event_player ], url: event_join_team_path(@event), turbo_method: :post do |f| %>
+        <%= f.hidden_field :team_id, value: team.id %>
+        <%= f.submit "Rejoindre #{team.name}" %>
+      <% end %>
+    </div>
+  <% end %>
 </section>
 
 <%= link_to event_path(@event), data: {turbo_method: :delete}, turbo_confirm: "tu es sûr?" do %>
