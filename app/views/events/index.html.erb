@@ -3,7 +3,7 @@
 <%= link_to 'Créer un nouvel événément futsal', new_event_path, id: 'cta-btn' %>
 
 <section id="events-grid-container">
-  <% @events.each do |event| %>
+  <% @events.find_each do |event| %>
     <%= render 'events/index/event-card', event: event %>
   <% end %>
 </section>
