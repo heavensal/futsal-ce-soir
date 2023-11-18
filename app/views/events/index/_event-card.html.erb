@@ -1,9 +1,11 @@
-  <div class="event-card">
-    <%= link_to event_path(event) do %>
+<div class="event-card">
+  <%= link_to event_path(event) do %>
     <div class="event-content">
+
       <h2>
         <%= event.name %>
       </h2>
+
       <div>
         <p>
           <%= event.location %>
@@ -22,5 +24,5 @@
 
     </div>
 
-<% end %>
-  </div>
+  <% end %>
+</div>
