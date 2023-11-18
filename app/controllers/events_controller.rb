@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    @events = Event.find_in_batches(:batch_size => 100)
     end
   end
 
