@@ -9,7 +9,7 @@
   margin-bottom: 0.5em;
 }
 
-#team-1 {
+.team-0 {
   background-color: #8b0000;
   border: 2px solid #b22222;
   border-radius: 4px;
@@ -18,7 +18,7 @@
 }
 
 
-#team-2 {
+.team-1 {
   background-color: #000E8B;
   border: 2px solid #2239B2;
   border-radius: 4px;
@@ -26,7 +26,7 @@
   width: 40%;
 }
 
-#bench {
+.team-2 {
   margin-top: 1em;
   background-color: #7A7A7A;
   border: 2px solid #D9D9D9;

@@ -7,18 +7,18 @@
       </h2>
 
       <div>
-        <p>
+        <p class="text-white">
           <%= event.location %>
         </p>
 
-        <p>
+        <p class="text-white">
           <%= l event.start_time, format: :date %>
           <br>
           <%= l event.start_time, format: :hour %>
         </p>
       </div>
 
-      <p>
+      <p class="<%= event.players.length < event.max_players ? "green-team" : "red-team" %>">
         <%= event.players.length %>/<%= event.max_players %> joueurs
       </p>
 

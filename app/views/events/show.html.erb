@@ -6,27 +6,25 @@
 
 
 <section id="teams-container">
-  <% @event.teams.each do |team| %>
-    <div id="team-1">
+  <% @event.teams.each_with_index do |team, i| %>
+
+    <div class="team-<%= i %>">
 
       <h2 class="team-title">
         <%= team.name %>
       </h2>
 
-      <% team.players.each do |player| %>
-        <div class="player-card-1">
-          <%= player.first_name %>
-        </div>
+      <%= turbo_frame_tag dom_id(team) do %>
+        <%= render 'events/show/each-players', team: team, event: @event, event_player: @event_player %>
       <% end %>
 
-      <%= form_with model: [ @event, @event_player ], url: event_join_team_path(@event), turbo_method: :post do |f| %>
-        <%= f.hidden_field :team_id, value: team.id %>
-        <%= f.submit "Rejoindre #{team.name}" %>
-      <% end %>
     </div>
+
   <% end %>
 </section>
 
-<%= link_to event_path(@event), data: {turbo_method: :delete}, turbo_confirm: "tu es sûr?" do %>
-  <div>Annuler le futsal</div>
-<% end %>
+<div class="text-center">
+  <%= link_to event_path(@event), data: {turbo_method: :delete, turbo_confirm: "tu es sûr?"} do %>
+    <button id="delete-btn">Annuler le futsal</button>
+  <% end %>
+</div>

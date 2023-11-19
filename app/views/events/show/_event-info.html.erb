@@ -11,7 +11,7 @@
   <%= number_to_currency(@event.price, unit: "€", separator: ",", delimiter: " ", format: "%n %u") %> / joueur
 </div>
 
-<div class="container-flex-center">
+<div class="container-flex-center <%= event.players.length < event.max_players ? "green-team" : "red-team" %>">
   <div class='event-info'>
     <%= @event.players.length %>
   </div>

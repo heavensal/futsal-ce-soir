@@ -18,9 +18,11 @@ class User < ApplicationRecord
   private
 
   def set_username
+    self.first_name.capitalize!
+    self.last_name.upcase!
     random_number = rand(1000..9999)
     loop do
-      self.username = "#{first_name.capitalize}#{last_name[0].capitalize}##{random_number}"
+      self.username = "#{first_name}#{last_name[0]}##{random_number}"
       break unless User.exists?(username: self.username)
     end
   end

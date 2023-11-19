@@ -1,0 +1,9 @@
+<% if @old_team %>
+  <%= turbo_stream.replace dom_id(@old_team) do %>
+    <%= render partial: 'events/show/each-players', locals: { team: @old_team, event: @event, event_player: @event_player } %>
+  <% end %>
+<% end %>
+
+<%= turbo_stream.replace dom_id(@new_team) do %>
+  <%= render partial: 'events/show/each-players', locals: { team: @new_team, event: @event, event_player: @event_player } %>
+<% end %>
