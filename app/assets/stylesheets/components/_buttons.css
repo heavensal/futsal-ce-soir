@@ -28,39 +28,3 @@
   cursor: pointer;
   transform: scale(1.1);
 }
-
-#delete-btn {
-  margin-top: 2em;
-  color: white;
-  font-size: 20px;
-  background-color: rgb(150, 0, 0);
-  border: 2px solid rgb(255, 0, 0);
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
-
-
-  padding: 0.5em;
-  width: 75%;
-  text-align: center;
-  z-index: 10;
-  transition: background-color 0.3s ease;
-}
-
-#delete-btn:hover {
-  background-color: rgb(255, 0, 0);
-  cursor: pointer;
-}
-
-.join-team-cta {
-  background-color: #556B2F;
-  border-radius: 4px;
-  padding: 0.25em;
-  margin-bottom: 4px;
-  width: 100%;
-  border: none;
-  color: white;
-  box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.5);
-}
-
-.join-team-cta:hover {
-  cursor: pointer;
-}

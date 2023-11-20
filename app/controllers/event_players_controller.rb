@@ -6,10 +6,7 @@ class EventPlayersController < ApplicationController
     @event_player.team_id = event_player_params[:team_id]
     @event_player.save!
     @new_team = @event_player.team
-    respond_to do |format|
-      format.turbo_stream
-      format.html { redirect_to event_path(@event) }
-    end
+    redirect_to event_path(@event)
   end
 
   private

@@ -1,0 +1,40 @@
+.event-info {
+  background-color: #4A5D43;
+  border: 2px solid #2F3F27;
+}
+
+.player-card-1 {
+  background-color: #b22222;
+}
+
+.player-card-2 {
+  background-color: #2239B2;
+}
+
+.player-card-3 {
+  background-color: #6a6a6a;
+}
+
+.team-1 {
+  background-color: #8b0000;
+  border: 2px solid #b22222;
+}
+
+.team-2 {
+  background-color: #000E8B;
+  border: 2px solid #2239B2;
+}
+
+.team-3 {
+  margin-top: 1em;
+  background-color: #7A7A7A;
+  border: 2px solid #D9D9D9;
+}
+
+.green-team {
+  color:#40be02;
+}
+
+.red-team {
+  color: rgb(255, 0, 0);
+}

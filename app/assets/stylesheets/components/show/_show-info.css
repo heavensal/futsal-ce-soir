@@ -1,6 +1,4 @@
 .event-info {
-  background-color: #4A5D43;
-  border: 1px solid #2F3F27;
   text-align: center;
   margin: 1em;
   border-radius: 4px;
@@ -19,13 +17,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
-}
-
-.green-team {
-  color:#40be02;
-}
-
-.red-team {
-  color: rgb(255, 0, 0);
+  font-size: 16px;
 }

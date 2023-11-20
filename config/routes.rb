@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root 'events#index'
   resources :events, only: [:index, :show, :new, :create, :update, :destroy ] do
     post 'join_team', to: 'event_players#create_or_update', as: :join_team
-    patch 'join_team', to: 'event_players#create_or_update'
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

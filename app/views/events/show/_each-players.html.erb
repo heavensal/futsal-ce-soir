@@ -1,5 +1,5 @@
 <% team.players.each do |player| %>
-  <div class="player-card">
+  <div class="player-card player-card-<%= i + 1 %>" >
     <%= player.first_name %>
   </div>
 <% end %>

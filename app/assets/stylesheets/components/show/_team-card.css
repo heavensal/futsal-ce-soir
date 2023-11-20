@@ -1,0 +1,23 @@
+#teams-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align:center;
+}
+
+.team-title {
+  margin-bottom: 0.5em;
+}
+
+.team-card {
+  border-radius: 4px;
+  padding: 0.5em;
+  width: 40%;
+}
+
+.player-card {
+  border-radius: 4px;
+  padding: 0.1em;
+  margin-bottom: 4px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
