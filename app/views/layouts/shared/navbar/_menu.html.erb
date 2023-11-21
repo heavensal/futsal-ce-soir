@@ -1,4 +1,4 @@
-<section id="dark-overlay" class="d-none" data-navbar-target="dark">
+<section id="dark-overlay" class="d-none" data-action="click->navbar#open" data-navbar-target="dark">
 </section>
 <section id="menu-section" class="d-none close" data-navbar-target="menu">
   <ul id="menu-list">
@@ -27,10 +27,11 @@
     </li>
 
     <li id="menu-agent-swap">
-      <div>
-        <button>Joueur privé</button>
-        <button>Agent libre</button>
-      </div>
+      <% if user_signed_in? %>
+        <div id="<%= dom_id(current_user) %>">
+          <%= render 'users/free_agent', user: current_user %>
+        </div>
+      <% end %>
     </li>
 
     <li>
