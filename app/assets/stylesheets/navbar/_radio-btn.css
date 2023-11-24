@@ -1,0 +1,43 @@
+.form-agent {
+  padding: 0;
+}
+
+.btn-agent {
+  padding: 0.5em 0.25em;
+  width: 30vw;
+  color: white;
+  border: none;
+}
+
+#menu-agent-swap {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1em;
+}
+
+.btn-active-left {
+  background-color: rgba(50, 205, 50, 0.33);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 4px;
+}
+
+.btn-active-right {
+  background-color: rgba(50, 205, 50, 0.33);
+  box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 4px;
+}
+
+
+.btn-inactive {
+  background-color: rgba(47, 63, 39, 1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-inactive:hover {
+  background-color: rgba(50, 205, 50, 0.33);
+}

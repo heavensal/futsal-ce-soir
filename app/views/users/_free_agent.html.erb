@@ -1,8 +1,0 @@
-
-  <%= form_with model: user, url:  free_agent_path, method: :patch, data: { turbo: true } do |f| %>
-    <%= f.radio_button :free_agent, true %>
-    <%= f.label :free_agent_true, 'Agent libre' %>
-    <%= f.radio_button :free_agent, false %>
-    <%= f.label :free_agent_false, 'Joueur privé' %>
-    <%= f.submit 'Mettre à jour'  %>
-  <% end %>

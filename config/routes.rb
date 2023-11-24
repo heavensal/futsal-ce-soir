@@ -5,7 +5,8 @@ Rails.application.routes.draw do
     post 'join_team', to: 'event_players#create_or_update', as: :join_team
   end
 
-  patch 'free_agent', to: 'users#update', as: :free_agent
+  patch 'free_agent_true', to: 'users#free_agent_true', as: :free_agent_true
+  patch 'free_agent_false', to: 'users#free_agent_false', as: :free_agent_false
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

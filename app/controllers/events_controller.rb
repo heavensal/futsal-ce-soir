@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.find_in_batches(:batch_size => 100)
+    @events = Event.includes(event_players: :player).order(:start_time)
   end
 
   def show

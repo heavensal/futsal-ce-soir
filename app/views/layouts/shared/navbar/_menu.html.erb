@@ -27,11 +27,7 @@
     </li>
 
     <li id="menu-agent-swap">
-      <% if user_signed_in? %>
-        <div id="<%= dom_id(current_user) %>">
-          <%= render 'users/free_agent', user: current_user %>
-        </div>
-      <% end %>
+      <%= render 'layouts/shared/navbar/free_agent', user: current_user %>
     </li>
 
     <li>

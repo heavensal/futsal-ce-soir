@@ -2,7 +2,7 @@
   position: fixed;
   right:0;
   top: 8vh;
-  width: 60vw;
+  width: 75vw;
   height: 92vh;
   z-index: 1000;
 }
@@ -45,13 +45,6 @@
   font-family: arial;
   padding: 0.5em;
   transition: background-color 0.3s ease;
-}
-
-#menu-agent-swap {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .d-none {

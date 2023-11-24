@@ -3,6 +3,12 @@
   background-color: #6B8E23;
   box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.event-card:hover {
+  background-color: rgba(50, 205, 50, 0.33);
+  transform: scale(1.05);
 }
 
 .event-content {
@@ -13,10 +19,6 @@
   padding: 0.5em;
 }
 
-.event-card:hover {
-  background-color: rgba(50, 205, 50, 0.33);
-  transform: scale(1.05);
-}
 
 #events-grid-container {
   display: grid;

@@ -1,4 +1,6 @@
-<nav data-controller="navbar">
-  <%= render 'layouts/shared/navbar/top' %>
-  <%= render 'layouts/shared/navbar/menu' %>
-</nav>
+<% if user_signed_in? %>
+  <nav data-controller="navbar">
+    <%= render 'layouts/shared/navbar/top' %>
+    <%= render 'layouts/shared/navbar/menu' %>
+  </nav>
+<% end %>
