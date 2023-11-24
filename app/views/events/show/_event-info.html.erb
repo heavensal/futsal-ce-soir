@@ -1,6 +1,7 @@
-<div class="event-info">
+<%= turbo_frame_tag 'edit-location', class: 'event-info' do %>
   <%= @event.location %>
-</div>
+  <%= link_to '✏️', edit_event_path(@event) %>
+  <% end %>
 
 <div class='event-info'>
   <%= l @event.start_time, format: :date %> <br>

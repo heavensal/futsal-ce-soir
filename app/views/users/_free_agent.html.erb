@@ -1,0 +1,11 @@
+ <li id="menu-agent-swap">
+ <%= form_with model: user, url: free_agent_true_path, method: :patch, data: { turbo_stream: true }, class: 'form-agent' do |f| %>
+  <%= f.hidden_field :free_agent, value: true %>
+  <%= f.submit 'Agent libre', class: "btn-agent #{user.free_agent ? "btn-active-left" : "btn-inactive" }" %>
+  <% end %>
+
+  <%= form_with model: user, url: free_agent_false_path, method: :patch, class: 'form-agent' do |f| %>
+  <%= f.hidden_field :free_agent, value: false %>
+  <%= f.submit 'Joueur privé', class: "btn-agent #{user.free_agent ? "btn-inactive" : "btn-active-right" }" %>
+  <% end %>
+  </li>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'events#index'
-  resources :events, only: [:index, :show, :new, :create, :update, :destroy ] do
+  resources :events do
     post 'join_team', to: 'event_players#create_or_update', as: :join_team
   end
 

@@ -1,0 +1,15 @@
+<section id="teams-container">
+  <% event.teams.each_with_index do |team, i| %>
+
+    <div class="team-card team-<%= i + 1 %>">
+
+      <h2 class="team-title">
+        <%= team.name %>
+      </h2>
+
+      <%= render 'events/show/each-players', team: team, event: event, event_player: @event_player, i: i %>
+
+    </div>
+
+  <% end %>
+</section>

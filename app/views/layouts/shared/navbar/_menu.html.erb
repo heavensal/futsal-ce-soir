@@ -26,9 +26,8 @@
       <% end %>
     </li>
 
-    <li id="menu-agent-swap">
-      <%= render 'layouts/shared/navbar/free_agent', user: current_user %>
-    </li>
+    <%# Partial des buttons pour changer entre agent libre et privé %>
+    <%= render 'users/free_agent', user: current_user %>
 
     <li>
       <%= link_to edit_user_registration_path do %>

@@ -1,0 +1,13 @@
+<%= turbo_frame_tag 'edit-title' do %>
+  <%= form_with model: @event do |f| %>
+    <%= f.text_field :name, autofocus: true, class: "form-field"  %>
+    <%= f.submit '✔️', id: 'form-submit-btn' %>
+  <% end %>
+<% end %>
+
+<%= turbo_frame_tag 'edit-location' do %>
+  <%= form_with model: @event do |f| %>
+    <%= f.text_field :location, autofocus: true, class: "form-field"  %>
+    <%= f.submit '✔️', id: 'form-submit-btn' %>
+  <% end %>
+<% end %>

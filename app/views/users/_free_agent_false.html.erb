@@ -1,4 +1,0 @@
-<%= form_with model: user, url: free_agent_false_path, method: :patch, class: 'form-agent' do |f| %>
- <%= f.hidden_field :free_agent, value: false %>
- <%= f.submit 'Joueur privé', class: "btn-agent #{user.free_agent ? "btn-inactive" : "btn-active-right" }" %>
-<% end %>

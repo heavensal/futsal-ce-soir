@@ -3,14 +3,20 @@ class UsersController < ApplicationController
   def free_agent_true
     @user = current_user
     if @user.update(set_free_params)
-      redirect_to root_path
+      respond_to do |format|
+        format.turbo_stream
+        format.html { redirect_to root_path }
+      end
     end
   end
 
   def free_agent_false
     @user = current_user
     if @user.update(set_free_params)
-      redirect_to root_path
+      respond_to do |format|
+        format.turbo_stream
+        format.html { redirect_to root_path }
+      end
     end
   end
 
